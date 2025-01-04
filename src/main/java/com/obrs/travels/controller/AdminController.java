@@ -2,6 +2,14 @@ package com.obrs.travels.controller;
 
 import java.util.List;
 
+import com.obrs.travels.dto.AdminDto;
+import com.obrs.travels.dto.AdminLoginDto;
+import com.obrs.travels.dto.BusDto;
+import com.obrs.travels.dto.OwnerDto;
+import com.obrs.travels.service.AdminService;
+import com.obrs.travels.service.BusService;
+import com.obrs.travels.service.OwnerService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,14 +20,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import jakarta.servlet.http.HttpSession;
-
-import com.obrs.travels.dto.AdminDto;
-import com.obrs.travels.dto.AdminLoginDto;
-import com.obrs.travels.dto.BusDto;
-import com.obrs.travels.dto.OwnerDto;
-import com.obrs.travels.service.AdminService;
-import com.obrs.travels.service.BusService;
-import com.obrs.travels.service.OwnerService;
 
 @Controller
 @RequestMapping(path = "/travels/admin")
